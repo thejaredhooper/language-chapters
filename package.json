@@ -10,7 +10,7 @@
     "story-writing",
     "writing"
   ],
-  "repository": "https://github.com/atom/language-chapters",
+  "repository": "https://github.com/thejaredhooper/language-chapters",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
