@@ -1,10 +1,10 @@
 'fileTypes': [
-  'gek'
-  'geck'
-  'scn'
+  'ch'
+  'chap'
+  'chapter'
 ]
-'name': 'Geck'
-'firstLineMatch': "(?i)^\\s*(scn|scriptname)"
+'name': 'Chapters'
+'firstLineMatch': "(?i)^\\s*(ch|chap|chapter)"
 'patterns': [
   {
     'match': '(?i)\\bPlayer\\b'
@@ -44,4 +44,4 @@
     'name': 'constant.numeric'
   }
 ]
-'scopeName': 'source.geck'
+'scopeName': 'source.chapters'
