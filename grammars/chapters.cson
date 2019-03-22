@@ -1,16 +1,17 @@
-name: 'Chapters'
-scopeName: 'chapters'
-type: 'tree-sitter'
-parser: 'tree-sitter-chapters'
-fileTypes: [
+'name': 'Chapters'
+'scopeName': 'source.chapters'
+'type': 'tree-sitter'
+'parser': 'tree-sitter-chapters'
+'fileTypes': [
   'ch',
   'chapter',
   'chapters'
 ]
-scopes:
+
+'scopes':
   # Apply the classes `syntax--builtin` and `syntax--variable` to all
   # `identifier` nodes whose text is `require`.
-  'identifier': {exact: 'Emreed', scopes: 'builtin.class.name'},
+  'identifier': {exact: 'United States', scopes: 'builtin.class.name'},
   #
   # # Apply the classes `syntax--type` and `syntax--integer` to all
   # # `primitive_type` nodes whose text starts with `int` or `uint`.
