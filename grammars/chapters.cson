@@ -7,8 +7,8 @@
 'firstLineMatch': "(?i)^\\s*(ch|chapter)"
 'patterns': [
   {
-    'begin': '['
-    'end': ']'
+    'begin': '\['
+    'end': '\]'
     'name': 'comment'
   }
   {
