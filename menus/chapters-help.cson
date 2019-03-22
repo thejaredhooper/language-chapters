@@ -1,0 +1,27 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-workspace': [
+    {
+      label:'See Chapters API'
+      command:'language-chapters:lookup'
+    }
+  ]
+
+menu: [
+  {
+    label:'Packages'
+    submenu: [
+      label:'Chapters'
+      submenu: [
+        { label:'See GECK API', command:'language-chapters:lookup' }
+        { type:'separator' }
+        { label:'Toggle FOSE Functions', command:'language-chapters:toggleFOSE' }
+        { label:'Toggle Vegas Functions', command:'language-chapters:toggleVegas' }
+        { label:'Toggle NVSE Functions', command:'language-chapters:toggleNVSE' }
+        { label:'Toggle NX Functions', command:'language-chapters:toggleNX' }
+        { label:'Toggle Lutana Functions', command:'language-chapters:toggleLutana' }
+        { label:'Toggle JIP Functions', command:'language-chapters:toggleJIP' }
+      ]
+    ]
+  }
+]
