@@ -7,41 +7,9 @@
 'firstLineMatch': "(?i)^\\s*(ch|chap|chapter)"
 'patterns': [
   {
-    'match': '(?i)\\bPlayer\\b'
-    'name': 'keywork.geck-keyword.player'
-  }
-  {
-    'match': '(?i)\\b(set)\\b(.*?)\\b(to)\\b'
-    'captures':
-      '1': 'name': 'keyword'
-      '2': 'name': 'variable'
-      '3': 'name': 'keyword'
-  }
-  {
-    'begin': ';'
-    'end': '$'
+    'begin': '\\['
+    'end': '\\]'
     'name': 'comment'
-  }
-  {
-    'begin': '"'
-    'beginCaptures':
-      '0':
-        'name': 'string'
-    'end': '"'
-    'endCaptures':
-      '0':
-        'name': 'string'
-    'name': 'string'
-    'patterns': [
-      {
-        'match': '\\\\.'
-        'name': 'constant.character.escape'
-      }
-    ]
-  }
-  {
-    'match': '[-+]?\\d\\+([\\.]\\d+)?'
-    'name': 'constant.numeric'
   }
 ]
 'scopeName': 'source.chapters'
