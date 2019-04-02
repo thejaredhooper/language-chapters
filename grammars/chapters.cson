@@ -1,15 +1,11 @@
+'scopeName': 'source.chapters'
+'name': 'Chapters'
+'firstLineMatch': "(?i)^\\s*(ch|chap|chapter)"
+'limitLineLength': no
+'maxTokensPerLine': 1000
 'fileTypes': [
   'ch'
   'chap'
   'chapter'
 ]
-'name': 'Chapters'
-'firstLineMatch': "(?i)^\\s*(ch|chap|chapter)"
-'patterns': [
-  {
-    'begin': '\\['
-    'end': '\\]'
-    'name': 'comment'
-  }
-]
-'scopeName': 'source.chapters'
+'parser': 'language-chapters'
