@@ -1,4 +1,5 @@
-PACKAGE_VERSION=$(npm version patch | echo)
+VERSION=$(npm version patch)
+VERSION=$(echo $VERSION | cut -c 2-)
 
 git add .
 git commit -m"Published via script"
@@ -6,4 +7,4 @@ git push
 
 npm publish
 
-apm publish --tag $PACKAGE_VERSION
+apm publish --tag $VERSION
