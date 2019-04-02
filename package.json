@@ -1,6 +1,6 @@
 {
   "name": "language-chapters",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "A language to dynamically parse significant parts of your story",
   "keywords": [
     "language",
